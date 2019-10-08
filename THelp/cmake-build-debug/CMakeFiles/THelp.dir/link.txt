@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/THelp.dir/main.cpp.o  -o THelp 

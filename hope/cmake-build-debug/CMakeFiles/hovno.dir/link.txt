@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/hovno.dir/hovno/main.cpp.o  -o hovno /usr/lib64/libOpenGL.so /usr/lib64/libGLX.so /usr/lib64/libGLU.so -lglfw -lGLEW 

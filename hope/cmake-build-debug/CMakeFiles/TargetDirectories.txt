@@ -1,0 +1,3 @@
+/home/kvitajin/CLionProjects/vsb/zpg/hope/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/kvitajin/CLionProjects/vsb/zpg/hope/cmake-build-debug/CMakeFiles/hovno.dir
+/home/kvitajin/CLionProjects/vsb/zpg/hope/cmake-build-debug/CMakeFiles/edit_cache.dir

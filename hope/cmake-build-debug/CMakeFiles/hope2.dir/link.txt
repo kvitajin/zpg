@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/hope2.dir/main.cpp.o  -o hope2 /usr/lib64/libOpenGL.so /usr/lib64/libGLX.so /usr/lib64/libGLU.so 
