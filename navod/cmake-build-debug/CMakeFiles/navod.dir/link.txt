@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/navod.dir/files/main.cpp.o  -o navod 

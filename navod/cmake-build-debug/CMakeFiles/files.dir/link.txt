@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/files.dir/files/main.cpp.o  -o files /usr/lib64/libOpenGL.so /usr/lib64/libGLX.so /usr/lib64/libGLU.so -lglfw -lGLEW 
