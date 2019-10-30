@@ -15,6 +15,14 @@ GL/glew.h
 -
 GLFW/glfw3.h
 -
+vertexShader.h
+/home/kvitajin/CLionProjects/vsb/zpg/cv/files/vertexShader.h
+
+/home/kvitajin/CLionProjects/vsb/zpg/cv/files/vertexShader.cpp
+vertexShader.h
+/home/kvitajin/CLionProjects/vsb/zpg/cv/files/vertexShader.h
+
+/home/kvitajin/CLionProjects/vsb/zpg/cv/files/vertexShader.h
 glm/vec3.hpp
 -
 glm/vec4.hpp

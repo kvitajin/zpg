@@ -4,7 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/kvitajin/CLionProjects/vsb/zpg/cv/files/fragmentShader.cpp" "/home/kvitajin/CLionProjects/vsb/zpg/cv/cmake-build-debug/CMakeFiles/files.dir/files/fragmentShader.cpp.o"
   "/home/kvitajin/CLionProjects/vsb/zpg/cv/files/main.cpp" "/home/kvitajin/CLionProjects/vsb/zpg/cv/cmake-build-debug/CMakeFiles/files.dir/files/main.cpp.o"
+  "/home/kvitajin/CLionProjects/vsb/zpg/cv/files/shader.cpp" "/home/kvitajin/CLionProjects/vsb/zpg/cv/cmake-build-debug/CMakeFiles/files.dir/files/shader.cpp.o"
+  "/home/kvitajin/CLionProjects/vsb/zpg/cv/files/vertexObject.cpp" "/home/kvitajin/CLionProjects/vsb/zpg/cv/cmake-build-debug/CMakeFiles/files.dir/files/vertexObject.cpp.o"
+  "/home/kvitajin/CLionProjects/vsb/zpg/cv/files/vertexShader.cpp" "/home/kvitajin/CLionProjects/vsb/zpg/cv/cmake-build-debug/CMakeFiles/files.dir/files/vertexShader.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

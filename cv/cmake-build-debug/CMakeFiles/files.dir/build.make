@@ -70,20 +70,80 @@ CMakeFiles/files.dir/files/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/files.dir/files/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kvitajin/CLionProjects/vsb/zpg/cv/files/main.cpp -o CMakeFiles/files.dir/files/main.cpp.s
 
+CMakeFiles/files.dir/files/vertexShader.cpp.o: CMakeFiles/files.dir/flags.make
+CMakeFiles/files.dir/files/vertexShader.cpp.o: ../files/vertexShader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kvitajin/CLionProjects/vsb/zpg/cv/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/files.dir/files/vertexShader.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/files.dir/files/vertexShader.cpp.o -c /home/kvitajin/CLionProjects/vsb/zpg/cv/files/vertexShader.cpp
+
+CMakeFiles/files.dir/files/vertexShader.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/files.dir/files/vertexShader.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kvitajin/CLionProjects/vsb/zpg/cv/files/vertexShader.cpp > CMakeFiles/files.dir/files/vertexShader.cpp.i
+
+CMakeFiles/files.dir/files/vertexShader.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/files.dir/files/vertexShader.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kvitajin/CLionProjects/vsb/zpg/cv/files/vertexShader.cpp -o CMakeFiles/files.dir/files/vertexShader.cpp.s
+
+CMakeFiles/files.dir/files/fragmentShader.cpp.o: CMakeFiles/files.dir/flags.make
+CMakeFiles/files.dir/files/fragmentShader.cpp.o: ../files/fragmentShader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kvitajin/CLionProjects/vsb/zpg/cv/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/files.dir/files/fragmentShader.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/files.dir/files/fragmentShader.cpp.o -c /home/kvitajin/CLionProjects/vsb/zpg/cv/files/fragmentShader.cpp
+
+CMakeFiles/files.dir/files/fragmentShader.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/files.dir/files/fragmentShader.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kvitajin/CLionProjects/vsb/zpg/cv/files/fragmentShader.cpp > CMakeFiles/files.dir/files/fragmentShader.cpp.i
+
+CMakeFiles/files.dir/files/fragmentShader.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/files.dir/files/fragmentShader.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kvitajin/CLionProjects/vsb/zpg/cv/files/fragmentShader.cpp -o CMakeFiles/files.dir/files/fragmentShader.cpp.s
+
+CMakeFiles/files.dir/files/shader.cpp.o: CMakeFiles/files.dir/flags.make
+CMakeFiles/files.dir/files/shader.cpp.o: ../files/shader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kvitajin/CLionProjects/vsb/zpg/cv/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/files.dir/files/shader.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/files.dir/files/shader.cpp.o -c /home/kvitajin/CLionProjects/vsb/zpg/cv/files/shader.cpp
+
+CMakeFiles/files.dir/files/shader.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/files.dir/files/shader.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kvitajin/CLionProjects/vsb/zpg/cv/files/shader.cpp > CMakeFiles/files.dir/files/shader.cpp.i
+
+CMakeFiles/files.dir/files/shader.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/files.dir/files/shader.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kvitajin/CLionProjects/vsb/zpg/cv/files/shader.cpp -o CMakeFiles/files.dir/files/shader.cpp.s
+
+CMakeFiles/files.dir/files/vertexObject.cpp.o: CMakeFiles/files.dir/flags.make
+CMakeFiles/files.dir/files/vertexObject.cpp.o: ../files/vertexObject.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kvitajin/CLionProjects/vsb/zpg/cv/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/files.dir/files/vertexObject.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/files.dir/files/vertexObject.cpp.o -c /home/kvitajin/CLionProjects/vsb/zpg/cv/files/vertexObject.cpp
+
+CMakeFiles/files.dir/files/vertexObject.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/files.dir/files/vertexObject.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kvitajin/CLionProjects/vsb/zpg/cv/files/vertexObject.cpp > CMakeFiles/files.dir/files/vertexObject.cpp.i
+
+CMakeFiles/files.dir/files/vertexObject.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/files.dir/files/vertexObject.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kvitajin/CLionProjects/vsb/zpg/cv/files/vertexObject.cpp -o CMakeFiles/files.dir/files/vertexObject.cpp.s
+
 # Object files for target files
 files_OBJECTS = \
-"CMakeFiles/files.dir/files/main.cpp.o"
+"CMakeFiles/files.dir/files/main.cpp.o" \
+"CMakeFiles/files.dir/files/vertexShader.cpp.o" \
+"CMakeFiles/files.dir/files/fragmentShader.cpp.o" \
+"CMakeFiles/files.dir/files/shader.cpp.o" \
+"CMakeFiles/files.dir/files/vertexObject.cpp.o"
 
 # External object files for target files
 files_EXTERNAL_OBJECTS =
 
 files: CMakeFiles/files.dir/files/main.cpp.o
+files: CMakeFiles/files.dir/files/vertexShader.cpp.o
+files: CMakeFiles/files.dir/files/fragmentShader.cpp.o
+files: CMakeFiles/files.dir/files/shader.cpp.o
+files: CMakeFiles/files.dir/files/vertexObject.cpp.o
 files: CMakeFiles/files.dir/build.make
 files: /usr/lib64/libOpenGL.so
 files: /usr/lib64/libGLX.so
 files: /usr/lib64/libGLU.so
 files: CMakeFiles/files.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kvitajin/CLionProjects/vsb/zpg/cv/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable files"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kvitajin/CLionProjects/vsb/zpg/cv/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable files"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/files.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

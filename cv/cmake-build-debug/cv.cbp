@@ -80,7 +80,31 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/kvitajin/CLionProjects/vsb/zpg/cv/files/fragmentShader.cpp">
+			<Option target="files"/>
+		</Unit>
+		<Unit filename="/home/kvitajin/CLionProjects/vsb/zpg/cv/files/fragmentShader.h">
+			<Option target="files"/>
+		</Unit>
 		<Unit filename="/home/kvitajin/CLionProjects/vsb/zpg/cv/files/main.cpp">
+			<Option target="files"/>
+		</Unit>
+		<Unit filename="/home/kvitajin/CLionProjects/vsb/zpg/cv/files/shader.cpp">
+			<Option target="files"/>
+		</Unit>
+		<Unit filename="/home/kvitajin/CLionProjects/vsb/zpg/cv/files/shader.h">
+			<Option target="files"/>
+		</Unit>
+		<Unit filename="/home/kvitajin/CLionProjects/vsb/zpg/cv/files/vertexObject.cpp">
+			<Option target="files"/>
+		</Unit>
+		<Unit filename="/home/kvitajin/CLionProjects/vsb/zpg/cv/files/vertexObject.h">
+			<Option target="files"/>
+		</Unit>
+		<Unit filename="/home/kvitajin/CLionProjects/vsb/zpg/cv/files/vertexShader.cpp">
+			<Option target="files"/>
+		</Unit>
+		<Unit filename="/home/kvitajin/CLionProjects/vsb/zpg/cv/files/vertexShader.h">
 			<Option target="files"/>
 		</Unit>
 		<Unit filename="/home/kvitajin/CLionProjects/vsb/zpg/cv/CMakeLists.txt">

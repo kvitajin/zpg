@@ -1,5 +1,9 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/files.dir/files/fragmentShader.cpp.o"
   "CMakeFiles/files.dir/files/main.cpp.o"
+  "CMakeFiles/files.dir/files/shader.cpp.o"
+  "CMakeFiles/files.dir/files/vertexObject.cpp.o"
+  "CMakeFiles/files.dir/files/vertexShader.cpp.o"
   "files"
   "files.pdb"
 )

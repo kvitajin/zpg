@@ -123,6 +123,33 @@ files/fast:
 	$(MAKE) -f CMakeFiles/files.dir/build.make CMakeFiles/files.dir/build
 .PHONY : files/fast
 
+files/fragmentShader.o: files/fragmentShader.cpp.o
+
+.PHONY : files/fragmentShader.o
+
+# target to build an object file
+files/fragmentShader.cpp.o:
+	$(MAKE) -f CMakeFiles/files.dir/build.make CMakeFiles/files.dir/files/fragmentShader.cpp.o
+.PHONY : files/fragmentShader.cpp.o
+
+files/fragmentShader.i: files/fragmentShader.cpp.i
+
+.PHONY : files/fragmentShader.i
+
+# target to preprocess a source file
+files/fragmentShader.cpp.i:
+	$(MAKE) -f CMakeFiles/files.dir/build.make CMakeFiles/files.dir/files/fragmentShader.cpp.i
+.PHONY : files/fragmentShader.cpp.i
+
+files/fragmentShader.s: files/fragmentShader.cpp.s
+
+.PHONY : files/fragmentShader.s
+
+# target to generate assembly for a file
+files/fragmentShader.cpp.s:
+	$(MAKE) -f CMakeFiles/files.dir/build.make CMakeFiles/files.dir/files/fragmentShader.cpp.s
+.PHONY : files/fragmentShader.cpp.s
+
 files/main.o: files/main.cpp.o
 
 .PHONY : files/main.o
@@ -150,6 +177,87 @@ files/main.cpp.s:
 	$(MAKE) -f CMakeFiles/files.dir/build.make CMakeFiles/files.dir/files/main.cpp.s
 .PHONY : files/main.cpp.s
 
+files/shader.o: files/shader.cpp.o
+
+.PHONY : files/shader.o
+
+# target to build an object file
+files/shader.cpp.o:
+	$(MAKE) -f CMakeFiles/files.dir/build.make CMakeFiles/files.dir/files/shader.cpp.o
+.PHONY : files/shader.cpp.o
+
+files/shader.i: files/shader.cpp.i
+
+.PHONY : files/shader.i
+
+# target to preprocess a source file
+files/shader.cpp.i:
+	$(MAKE) -f CMakeFiles/files.dir/build.make CMakeFiles/files.dir/files/shader.cpp.i
+.PHONY : files/shader.cpp.i
+
+files/shader.s: files/shader.cpp.s
+
+.PHONY : files/shader.s
+
+# target to generate assembly for a file
+files/shader.cpp.s:
+	$(MAKE) -f CMakeFiles/files.dir/build.make CMakeFiles/files.dir/files/shader.cpp.s
+.PHONY : files/shader.cpp.s
+
+files/vertexObject.o: files/vertexObject.cpp.o
+
+.PHONY : files/vertexObject.o
+
+# target to build an object file
+files/vertexObject.cpp.o:
+	$(MAKE) -f CMakeFiles/files.dir/build.make CMakeFiles/files.dir/files/vertexObject.cpp.o
+.PHONY : files/vertexObject.cpp.o
+
+files/vertexObject.i: files/vertexObject.cpp.i
+
+.PHONY : files/vertexObject.i
+
+# target to preprocess a source file
+files/vertexObject.cpp.i:
+	$(MAKE) -f CMakeFiles/files.dir/build.make CMakeFiles/files.dir/files/vertexObject.cpp.i
+.PHONY : files/vertexObject.cpp.i
+
+files/vertexObject.s: files/vertexObject.cpp.s
+
+.PHONY : files/vertexObject.s
+
+# target to generate assembly for a file
+files/vertexObject.cpp.s:
+	$(MAKE) -f CMakeFiles/files.dir/build.make CMakeFiles/files.dir/files/vertexObject.cpp.s
+.PHONY : files/vertexObject.cpp.s
+
+files/vertexShader.o: files/vertexShader.cpp.o
+
+.PHONY : files/vertexShader.o
+
+# target to build an object file
+files/vertexShader.cpp.o:
+	$(MAKE) -f CMakeFiles/files.dir/build.make CMakeFiles/files.dir/files/vertexShader.cpp.o
+.PHONY : files/vertexShader.cpp.o
+
+files/vertexShader.i: files/vertexShader.cpp.i
+
+.PHONY : files/vertexShader.i
+
+# target to preprocess a source file
+files/vertexShader.cpp.i:
+	$(MAKE) -f CMakeFiles/files.dir/build.make CMakeFiles/files.dir/files/vertexShader.cpp.i
+.PHONY : files/vertexShader.cpp.i
+
+files/vertexShader.s: files/vertexShader.cpp.s
+
+.PHONY : files/vertexShader.s
+
+# target to generate assembly for a file
+files/vertexShader.cpp.s:
+	$(MAKE) -f CMakeFiles/files.dir/build.make CMakeFiles/files.dir/files/vertexShader.cpp.s
+.PHONY : files/vertexShader.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -159,9 +267,21 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... files"
 	@echo "... edit_cache"
+	@echo "... files/fragmentShader.o"
+	@echo "... files/fragmentShader.i"
+	@echo "... files/fragmentShader.s"
 	@echo "... files/main.o"
 	@echo "... files/main.i"
 	@echo "... files/main.s"
+	@echo "... files/shader.o"
+	@echo "... files/shader.i"
+	@echo "... files/shader.s"
+	@echo "... files/vertexObject.o"
+	@echo "... files/vertexObject.i"
+	@echo "... files/vertexObject.s"
+	@echo "... files/vertexShader.o"
+	@echo "... files/vertexShader.i"
+	@echo "... files/vertexShader.s"
 .PHONY : help
 
 
