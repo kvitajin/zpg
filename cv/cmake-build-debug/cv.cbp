@@ -80,6 +80,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/kvitajin/CLionProjects/vsb/zpg/cv/files/camera.cpp">
+			<Option target="files"/>
+		</Unit>
+		<Unit filename="/home/kvitajin/CLionProjects/vsb/zpg/cv/files/camera.h">
+			<Option target="files"/>
+		</Unit>
 		<Unit filename="/home/kvitajin/CLionProjects/vsb/zpg/cv/files/fragmentShader.cpp">
 			<Option target="files"/>
 		</Unit>

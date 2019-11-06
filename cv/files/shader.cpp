@@ -10,3 +10,7 @@ Shader::Shader(){
     this->fragment_shader= nullptr;
 
 }
+
+Shader::Shader(Camera *camera) {
+    this->m_camera=camera;
+}

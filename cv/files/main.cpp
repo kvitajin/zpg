@@ -219,7 +219,7 @@ int main(void)
         //M = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, 0.0f, 0.5f));
         M = glm::rotate(M, angle, glm::vec3(1.0f, 0.3f, 0.0f));
 
-        
+
 
         //angle += 0.001;
         GLint modelMatrixID = glGetUniformLocation(shaderProgram, "modelMatrix");

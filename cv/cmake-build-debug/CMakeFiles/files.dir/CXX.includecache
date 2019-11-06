@@ -6,37 +6,31 @@
 
 #IncludeRegexTransform: 
 
-/home/kvitajin/CLionProjects/vsb/zpg/cv/files/fragmentShader.h
+/home/kvitajin/CLionProjects/vsb/zpg/cv/files/camera.h
+glm/gtc/matrix_transform.hpp
+-
+glm/mat4x4.hpp
+-
+glm/vec3.hpp
+-
 shader.h
 /home/kvitajin/CLionProjects/vsb/zpg/cv/files/shader.h
-
-/home/kvitajin/CLionProjects/vsb/zpg/cv/files/main.cpp
-stdlib.h
--
-stdio.h
--
-GL/glew.h
--
-GLFW/glfw3.h
--
-vertexShader.h
-/home/kvitajin/CLionProjects/vsb/zpg/cv/files/vertexShader.h
-fragmentShader.h
-/home/kvitajin/CLionProjects/vsb/zpg/cv/files/fragmentShader.h
-vertexObject.h
-/home/kvitajin/CLionProjects/vsb/zpg/cv/files/vertexObject.h
 
 /home/kvitajin/CLionProjects/vsb/zpg/cv/files/shader.h
 GL/glew.h
 -
 netdb.h
 -
+shader.h
+/home/kvitajin/CLionProjects/vsb/zpg/cv/files/shader.h
+camera.h
+/home/kvitajin/CLionProjects/vsb/zpg/cv/files/camera.h
 
-/home/kvitajin/CLionProjects/vsb/zpg/cv/files/vertexObject.h
-GL/glew.h
+/home/kvitajin/CLionProjects/vsb/zpg/cv/files/vertexShader.cpp
+cstdio
 -
-iostream
--
+vertexShader.h
+/home/kvitajin/CLionProjects/vsb/zpg/cv/files/vertexShader.h
 
 /home/kvitajin/CLionProjects/vsb/zpg/cv/files/vertexShader.h
 glm/vec3.hpp

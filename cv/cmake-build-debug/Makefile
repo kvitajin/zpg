@@ -123,6 +123,33 @@ files/fast:
 	$(MAKE) -f CMakeFiles/files.dir/build.make CMakeFiles/files.dir/build
 .PHONY : files/fast
 
+files/camera.o: files/camera.cpp.o
+
+.PHONY : files/camera.o
+
+# target to build an object file
+files/camera.cpp.o:
+	$(MAKE) -f CMakeFiles/files.dir/build.make CMakeFiles/files.dir/files/camera.cpp.o
+.PHONY : files/camera.cpp.o
+
+files/camera.i: files/camera.cpp.i
+
+.PHONY : files/camera.i
+
+# target to preprocess a source file
+files/camera.cpp.i:
+	$(MAKE) -f CMakeFiles/files.dir/build.make CMakeFiles/files.dir/files/camera.cpp.i
+.PHONY : files/camera.cpp.i
+
+files/camera.s: files/camera.cpp.s
+
+.PHONY : files/camera.s
+
+# target to generate assembly for a file
+files/camera.cpp.s:
+	$(MAKE) -f CMakeFiles/files.dir/build.make CMakeFiles/files.dir/files/camera.cpp.s
+.PHONY : files/camera.cpp.s
+
 files/fragmentShader.o: files/fragmentShader.cpp.o
 
 .PHONY : files/fragmentShader.o
@@ -267,6 +294,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... files"
 	@echo "... edit_cache"
+	@echo "... files/camera.o"
+	@echo "... files/camera.i"
+	@echo "... files/camera.s"
 	@echo "... files/fragmentShader.o"
 	@echo "... files/fragmentShader.i"
 	@echo "... files/fragmentShader.s"
