@@ -4,4 +4,9 @@
 
 #include "shader.h"
 
-Shader::Shader()= default;
+
+Shader::Shader(){
+    this->vertex_shader=nullptr;
+    this->fragment_shader= nullptr;
+
+}

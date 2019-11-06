@@ -1,4 +1,3 @@
-
 //Include the standard C++ headers
 #include <stdlib.h>
 #include <stdio.h>
@@ -8,8 +7,10 @@
 //Include GLFW
 #include <GLFW/glfw3.h>
 
+
 #include "vertexShader.h"
 #include "fragmentShader.h"
+#include "vertexObject.h"
 
 static void error_callback(int error, const char* description){ fputs(description, stderr); }
 
@@ -114,10 +115,10 @@ int main(void)
      */
 
 
-    auto* fs =  new FragmentShader();
 
-    glm::mat4 M = glm::mat4(1.0f);
 
+   glm::mat4 M = glm::mat4(1.0f);
+/*
     M = glm::rotate(glm::mat4(1.0f),rotationx,glm::vec3(0.0f, 1.0f, 0.0f));
     M = glm::rotate(M, angle, glm::vec3(1.0f, 0.0f, 0.0f));
     M = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, 0.0f, myView));
@@ -131,7 +132,7 @@ int main(void)
     glUniformMatrix4fv(modelMatrixID, 1, GL_FALSE,  glm::value_ptr(M));
 //location, count, transpose, *value
 
-
+*/
 
 
 
@@ -149,10 +150,11 @@ int main(void)
         exit(EXIT_FAILURE);
     }
 
-glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
-glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
-glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
-glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
+
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
+    glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
+    glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 //
     window = glfwCreateWindow(800, 600, "ZPG", NULL, NULL);
     if (!window)
@@ -180,13 +182,22 @@ glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
     glViewport(0, 0, width, height);
 
 
+    auto* fs = new FragmentShader();
+    auto* vs = new VertexShader();
+    auto* vo = new VertexObject(0,0);
+    vo->CreateBufferObject();
+    vo->CreateArrayObject();
 
 
     //create and compile shaders
     //TODO tady jsem skoncil
+
+
+
+
     GLuint shaderProgram = glCreateProgram();
-    glAttachShader(shaderProgram, fragmentShader);
-    glAttachShader(shaderProgram, vertexShader);
+    glAttachShader(shaderProgram, fs->GetShader());
+    glAttachShader(shaderProgram, vs->GetShader());
     glLinkProgram(shaderProgram);
 
     GLint status;
@@ -195,19 +206,32 @@ glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
     {
         GLint infoLogLength;
         glGetProgramiv(shaderProgram, GL_INFO_LOG_LENGTH, &infoLogLength);
-        GLchar *strInfoLog = new GLchar[infoLogLength + 1];
+        auto *strInfoLog = new GLchar[infoLogLength + 1];
         glGetProgramInfoLog(shaderProgram, infoLogLength, NULL, strInfoLog);
         fprintf(stderr, "Linker failure: %s\n", strInfoLog);
         delete[] strInfoLog;
     }
+    float angle = 00.01;
 
 
     while (!glfwWindowShouldClose(window))
     {
+        //M = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, 0.0f, 0.5f));
+        M = glm::rotate(M, angle, glm::vec3(1.0f, 0.3f, 0.0f));
+
+        
+
+        //angle += 0.001;
+        GLint modelMatrixID = glGetUniformLocation(shaderProgram, "modelMatrix");
+
+        glUseProgram(shaderProgram);
+        glUniformMatrix4fv(modelMatrixID, 1, GL_FALSE, glm::value_ptr(M));
+
+
         // clear color and depth buffer
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
         glUseProgram(shaderProgram);
-        glBindVertexArray(VAO);
+        glBindVertexArray(vo->GetVAO());
         // draw triangles
         glDrawArrays(GL_TRIANGLES, 0, 3); //mode,first,count
         // update other events like input handling

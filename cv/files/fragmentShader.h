@@ -4,11 +4,11 @@
 
 #ifndef CV_FRAGMENTSHADER_H
 #define CV_FRAGMENTSHADER_H
-
+#pragma once
 #include "shader.h"
 
 
-class FragmentShader:Shader{
+class FragmentShader: Shader{
 public:
     FragmentShader();
     ~FragmentShader()= default;

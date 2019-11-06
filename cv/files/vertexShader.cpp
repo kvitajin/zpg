@@ -23,5 +23,3 @@ VertexShader::VertexShader(){
 GLuint VertexShader::GetShader(){
     return this->shader;
 }
-
-

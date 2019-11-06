@@ -1,7 +1,7 @@
 //
 // Created by kvitajin on 23.10.19.
 //
-
+#pragma once
 #ifndef CV_VERTEXOBJECT_H
 #define CV_VERTEXOBJECT_H
 
