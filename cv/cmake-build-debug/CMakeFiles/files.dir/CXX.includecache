@@ -16,6 +16,30 @@ glm/vec3.hpp
 shader.h
 /home/kvitajin/CLionProjects/vsb/zpg/cv/files/shader.h
 
+/home/kvitajin/CLionProjects/vsb/zpg/cv/files/fragmentShader.h
+shader.h
+/home/kvitajin/CLionProjects/vsb/zpg/cv/files/shader.h
+
+/home/kvitajin/CLionProjects/vsb/zpg/cv/files/koule/sphere.h
+
+/home/kvitajin/CLionProjects/vsb/zpg/cv/files/main.cpp
+stdlib.h
+-
+stdio.h
+-
+GL/glew.h
+-
+GLFW/glfw3.h
+-
+vertexShader.h
+/home/kvitajin/CLionProjects/vsb/zpg/cv/files/vertexShader.h
+fragmentShader.h
+/home/kvitajin/CLionProjects/vsb/zpg/cv/files/fragmentShader.h
+vertexObject.h
+/home/kvitajin/CLionProjects/vsb/zpg/cv/files/vertexObject.h
+koule/sphere.h
+/home/kvitajin/CLionProjects/vsb/zpg/cv/files/koule/sphere.h
+
 /home/kvitajin/CLionProjects/vsb/zpg/cv/files/shader.h
 GL/glew.h
 -
@@ -26,11 +50,11 @@ shader.h
 camera.h
 /home/kvitajin/CLionProjects/vsb/zpg/cv/files/camera.h
 
-/home/kvitajin/CLionProjects/vsb/zpg/cv/files/vertexShader.cpp
-cstdio
+/home/kvitajin/CLionProjects/vsb/zpg/cv/files/vertexObject.h
+GL/glew.h
 -
-vertexShader.h
-/home/kvitajin/CLionProjects/vsb/zpg/cv/files/vertexShader.h
+iostream
+-
 
 /home/kvitajin/CLionProjects/vsb/zpg/cv/files/vertexShader.h
 glm/vec3.hpp

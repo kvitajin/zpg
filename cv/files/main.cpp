@@ -12,13 +12,76 @@
 #include "fragmentShader.h"
 #include "vertexObject.h"
 
+#include "koule/sphere.h"
+
+struct Tmp{
+    float x, y, px, py, difX, difY;
+};
+
+Tmp tmp;
+struct Eye{
+    int key, div, old;
+} e;
+
+
+glm::vec3 eye=glm::vec3(-3.5,0,0);
+glm::vec3 target= glm::vec3(0.1f, 0.3f, 0.0f);
+glm::vec3 up=glm::vec3(0,1,0);
+
+static void moveUp(){
+    eye.y-=0.1;
+    std::cout<< eye.x << " "<< eye.y<< " "<< eye.z<<std::endl;
+
+}
+
+static void moveDown(){
+    eye.y+=0.1;
+    std::cout<< eye.x << " "<< eye.y<< " "<< eye.z<<std::endl;
+
+}
+
+static void moveLeft(){
+    eye.z+=0.1;
+    std::cout<< eye.x << " "<< eye.y<< " "<< eye.z<<std::endl;
+
+}
+
+static void moveRight(){
+    eye.z-=0.1;
+    std::cout<< eye.x << " "<< eye.y<< " "<< eye.z<<std::endl;
+}
+
+
+
+
+
+
 static void error_callback(int error, const char* description){ fputs(description, stderr); }
 
 static void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods)
 {
     if (key == GLFW_KEY_ESCAPE && action == GLFW_PRESS)
         glfwSetWindowShouldClose(window, GL_TRUE);
-    printf("key_callback [%d,%d,%d,%d] \n", key, scancode, action, mods);
+//    printf("key_callback [%d,%d,%d,%d] \n", key, scancode, action, mods);
+    //std::cout<< (char)key<<std::endl;
+
+    switch ((char)key){
+        case 'W':
+            moveUp();
+            break;
+        case 'S':
+            moveDown();
+            break;
+        case 'A':
+            moveLeft();
+            break;
+        case 'D':
+            moveRight();
+            break;
+    }
+
+    e.key=key;
+
 }
 
 static void window_focus_callback(GLFWwindow* window, int focused){ printf("window_focus_callback \n"); }
@@ -30,7 +93,15 @@ static void window_size_callback(GLFWwindow* window, int width, int height){
     glViewport(0, 0, width, height);
 }
 
-static void cursor_callback(GLFWwindow *window, double x, double y){ printf("cursor_callback \n"); }
+static void cursor_callback(GLFWwindow *window, double x, double y){ printf("cursor_callback %f %f \n", x, y ); }
+
+static void pokus(GLFWwindow *window, double x, double y){
+    tmp.difX=x-tmp.x;
+    tmp.difY=y-tmp.y;
+    tmp.x=x;
+    tmp.y=y;
+    };
+
 
 static void button_callback(GLFWwindow* window, int button, int action, int mode){
     if (action == GLFW_PRESS) printf("button_callback [%d,%d,%d]\n", button, action, mode);
@@ -57,7 +128,7 @@ static void button_callback(GLFWwindow* window, int button, int action, int mode
 
 
 
-int main(void)
+int main()
 {
     /*
     GLFWwindow* window;
@@ -118,6 +189,7 @@ int main(void)
 
 
    glm::mat4 M = glm::mat4(1.0f);
+   glm::mat4 M2 = glm::mat4(2.0f);
 /*
     M = glm::rotate(glm::mat4(1.0f),rotationx,glm::vec3(0.0f, 1.0f, 0.0f));
     M = glm::rotate(M, angle, glm::vec3(1.0f, 0.0f, 0.0f));
@@ -136,13 +208,6 @@ int main(void)
 
 
 
-
-
-
-
-
-
-
     GLFWwindow* window;
     glfwSetErrorCallback(error_callback);
     if (!glfwInit()) {
@@ -156,7 +221,7 @@ int main(void)
     glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 //
-    window = glfwCreateWindow(800, 600, "ZPG", NULL, NULL);
+    window = glfwCreateWindow(800, 600, "ZPG", nullptr, nullptr);
     if (!window)
     {
         glfwTerminate();
@@ -173,6 +238,7 @@ int main(void)
     printf("Vendor %s\n", glGetString(GL_VENDOR));
     printf("Renderer %s\n", glGetString(GL_RENDERER));
     printf("GLSL %s\n", glGetString(GL_SHADING_LANGUAGE_VERSION));
+    printf("GLM %s\n", glGetString(GLM_VERSION));
     int major, minor, revision;
     glfwGetVersion(&major, &minor, &revision);
     printf("Using GLFW %i.%i.%i\n", major, minor, revision);
@@ -185,14 +251,11 @@ int main(void)
     auto* fs = new FragmentShader();
     auto* vs = new VertexShader();
     auto* vo = new VertexObject(0,0);
+    auto* cam = new Camera(nullptr);
+
+
     vo->CreateBufferObject();
     vo->CreateArrayObject();
-
-
-    //create and compile shaders
-    //TODO tady jsem skoncil
-
-
 
 
     GLuint shaderProgram = glCreateProgram();
@@ -207,25 +270,64 @@ int main(void)
         GLint infoLogLength;
         glGetProgramiv(shaderProgram, GL_INFO_LOG_LENGTH, &infoLogLength);
         auto *strInfoLog = new GLchar[infoLogLength + 1];
-        glGetProgramInfoLog(shaderProgram, infoLogLength, NULL, strInfoLog);
+        glGetProgramInfoLog(shaderProgram, infoLogLength, nullptr, strInfoLog);
         fprintf(stderr, "Linker failure: %s\n", strInfoLog);
         delete[] strInfoLog;
     }
-    float angle = 00.01;
+    float angleHor = 0.5;
+    float angleVert=0.5;
 
+
+    tmp.difY=tmp.difX=1;
 
     while (!glfwWindowShouldClose(window))
     {
         //M = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, 0.0f, 0.5f));
-        M = glm::rotate(M, angle, glm::vec3(1.0f, 0.3f, 0.0f));
+        M2 = glm::rotate(M2, angleVert, glm::vec3(1.0f, 0.3f, 0.0f));
+        glm::mat4 viewMat = glm::mat4(1.0f);
+//        viewMat=glm::lookAt(eye,glm::vec3(0,0,0),glm::vec3(0,1,0));
+        viewMat=glm::lookAt(eye, eye + target, up);
+
+        glm::mat4 projMat =glm::mat4(1.0f);
+        projMat =glm::perspective(glm::radians(45.0f), 4.0f / 3.0f, 0.1f, 100.0f);
+
+        glfwSetCursorPosCallback(window, pokus);
 
 
+        target.x=cos(glm::radians(tmp.difX));
+        target.z=sin(glm::radians(tmp.difX));
+        target.y=sin(glm::radians(tmp.difY));
+//        std::cout<< tmp.difX << " "<< tmp.difY<< "\t | \t"<<target.x << " "<< target.y<< " "<< target.z << std::endl;
+
+        glfwSetKeyCallback(window, key_callback);
+
+        ///target dat na mys a eye na sipky
+        ///u pohybu kamery si ukladat zmenu posunu, ne aktualni pozici
+
+
+//        cam->getCamera();
 
         //angle += 0.001;
+        GLint modelmatrixID2 =  glGetUniformLocation(shaderProgram, "modelMatrix");
+
+        GLint viewMatrixID = glGetUniformLocation(shaderProgram, "viewMatrix");
         GLint modelMatrixID = glGetUniformLocation(shaderProgram, "modelMatrix");
+        GLint projectionMatrixID = glGetUniformLocation(shaderProgram, "projectionMatrix");
+
+        if (modelMatrixID<0){
+            std::cout<< "o kurwa"<<std::endl;
+            return 1;
+        }
+        if (projectionMatrixID<0) {
+            std::cout << "o kurwa projekcni" << std::endl;
+            return 2;
+        }
 
         glUseProgram(shaderProgram);
         glUniformMatrix4fv(modelMatrixID, 1, GL_FALSE, glm::value_ptr(M));
+        glUniformMatrix4fv(viewMatrixID, 1, GL_FALSE, glm::value_ptr(viewMat));
+        glUniformMatrix4fv(projectionMatrixID, 1, GL_FALSE, glm::value_ptr(projMat));
+
 
 
         // clear color and depth buffer

@@ -12,18 +12,22 @@
 //-------Camera.h------
 class Shader;
 class Camera {
-    glm::vec3 eye=glm::vec3(0,0,-1) ;
+    glm::vec3 eye=glm::vec3(10, 0, 0) ;
     glm::vec3 target=glm::vec3((0,0,0));
 
     glm::vec3 up=glm::vec3(0, 1, 0);
 
     Shader* m_shader;
+    double angleVert=0;
+    double angleHor=5;
 public:
     Camera(Shader* shader);
     glm::mat4 getCamera();
     void toLeft();
     void toRight();
     void toFront();
+    void setShader(Shader* shader);
+
 };
 
 

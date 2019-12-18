@@ -6,18 +6,18 @@
 #include "shader.h"
 
 glm::mat4 Camera::getCamera() {
-    target.x=cos(fi);
-    target.z=sin(fi);
-    target.y=sin(psi);
+//    target.x=cos(this->angleHor);
+//    target.z=sin(this->angleHor);
+//    target.y=sin(this->angleVert);
     return glm::lookAt(eye, eye + target, up);
 }
 
 void Camera::toLeft() {
-    eye-=(glm::normalize(glm::cross(target,up)));
+    eye+=(glm::normalize(glm::cross(target,up)));
 
 }
 void Camera::toRight() {
-    eye+=(glm::normalize(glm::cross(target,up)));
+    eye-=(glm::normalize(glm::cross(target,up)));
 }
 
 
@@ -26,6 +26,10 @@ Camera::Camera(Shader *shader) {
 }
 
 void Camera::toFront() {
-
-
+    eye+=(glm::normalize(target));
 }
+
+void Camera::setShader(Shader *shader) {
+    this->m_shader= shader;
+}
+

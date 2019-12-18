@@ -13,6 +13,7 @@ CMakeFiles/files.dir/files/fragmentShader.cpp.o
 CMakeFiles/files.dir/files/main.cpp.o
  /home/kvitajin/CLionProjects/vsb/zpg/cv/files/camera.h
  /home/kvitajin/CLionProjects/vsb/zpg/cv/files/fragmentShader.h
+ /home/kvitajin/CLionProjects/vsb/zpg/cv/files/koule/sphere.h
  /home/kvitajin/CLionProjects/vsb/zpg/cv/files/main.cpp
  /home/kvitajin/CLionProjects/vsb/zpg/cv/files/shader.h
  /home/kvitajin/CLionProjects/vsb/zpg/cv/files/vertexObject.h
@@ -22,6 +23,7 @@ CMakeFiles/files.dir/files/shader.cpp.o
  /home/kvitajin/CLionProjects/vsb/zpg/cv/files/shader.cpp
  /home/kvitajin/CLionProjects/vsb/zpg/cv/files/shader.h
 CMakeFiles/files.dir/files/vertexObject.cpp.o
+ /home/kvitajin/CLionProjects/vsb/zpg/cv/files/koule/sphere.h
  /home/kvitajin/CLionProjects/vsb/zpg/cv/files/vertexObject.cpp
  /home/kvitajin/CLionProjects/vsb/zpg/cv/files/vertexObject.h
 CMakeFiles/files.dir/files/vertexShader.cpp.o
