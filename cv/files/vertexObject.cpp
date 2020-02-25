@@ -42,6 +42,11 @@ void VertexObject::CreateArrayObject() {
     glBindBuffer(GL_ARRAY_BUFFER, this->vbo);
     glBufferData(GL_ARRAY_BUFFER, sizeof(sphere), sphere, GL_STATIC_DRAW);
 
+
+    glVertexAttribPointer(0,3,GL_FLOAT,GL_FALSE,6*sizeof(float),(GLvoid*)0);
+    glVertexAttribPointer(1,3,GL_FLOAT,GL_FALSE,6*sizeof(float),(GLvoid*)(3*sizeof(float)));
+//([float, float, float], [float, float, float]) 3xfloat position, 3xfloat normal
+
 /*
 void glVertexAttribPointer(
    GLuint index,  //index of the generic vertex attribute to be modified.

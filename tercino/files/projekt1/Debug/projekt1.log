@@ -1,0 +1,7 @@
+﻿c:\program files (x86)\windows kits\10\include\10.0.17763.0\shared\minwindef.h(130): warning C4005: APIENTRY: předefinování makra
+LINK : warning LNK4075: /INCREMENTAL se ignoruje kv¨li specifikaci /LTCG.
+LINK : warning LNK4098: VřchozÝ knihovna MSVCRT je v konfliktu s pou×itÝm jinřch knihoven. Pou×ijte /NODEFAULTLIB:library.
+SOIL.lib(SOIL.obj) : warning LNK4099: Soubor .pdb vc110.pdb se nenaÜel s SOIL.lib(SOIL.obj) nebo na D:\FEI\ZPG\projekt\Debug\vc110.pdb. Objekt se propojÝ, jako by nebyly dostupnÚ ×ßdnÚ ladicÝ informace.
+SOIL.lib(stb_image_aug.obj) : warning LNK4099: Soubor .pdb vc110.pdb se nenaÜel s SOIL.lib(stb_image_aug.obj) nebo na D:\FEI\ZPG\projekt\Debug\vc110.pdb. Objekt se propojÝ, jako by nebyly dostupnÚ ×ßdnÚ ladicÝ informace.
+SOIL.lib(image_helper.obj) : warning LNK4099: Soubor .pdb vc110.pdb se nenaÜel s SOIL.lib(image_helper.obj) nebo na D:\FEI\ZPG\projekt\Debug\vc110.pdb. Objekt se propojÝ, jako by nebyly dostupnÚ ×ßdnÚ ladicÝ informace.
+SOIL.lib(image_DXT.obj) : warning LNK4099: Soubor .pdb vc110.pdb se nenaÜel s SOIL.lib(image_DXT.obj) nebo na D:\FEI\ZPG\projekt\Debug\vc110.pdb. Objekt se propojÝ, jako by nebyly dostupnÚ ×ßdnÚ ladicÝ informace.

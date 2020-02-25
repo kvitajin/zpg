@@ -3,7 +3,7 @@
 #include <GL/glew.h>
 
 //Include GLFW
-// C:\Users\Tess\Downloads\Libraries\glfw\lib-vc2015 zachováno
+// C:\Users\Tess\Downloads\Libraries\glfw\lib-vc2015 zachovï¿½no
 #include <GLFW/glfw3.h>  
 
 //Include GLM  
@@ -54,7 +54,7 @@ static void button_callback(GLFWwindow* window, int button, int action, int mode
 
 //GLM test
 
-// Projection matrix : 45° Field of View, 4:3 ratio, display range : 0.1 unit <-> 100 units
+// Projection matrix : 45 Field of View, 4:3 ratio, display range : 0.1 unit <-> 100 units
 glm::mat4 Projection = glm::perspective(45.0f, 4.0f / 3.0f, 0.01f, 100.0f);
 
 // Camera matrix
@@ -95,7 +95,7 @@ int main(void)
 
 	while (!glfwWindowShouldClose(window))
 	{
-		/* NEBEZPEÈÍ ZAOKROUHLOVÁNÍ - NEPØESNOST
+		/* NEBEZPEï¿½ï¿½ ZAOKROUHLOVï¿½Nï¿½ - NEPï¿½ESNOST
 		M = glm::scale(glm::mat4(1.0f), glm::vec3(0.5f));
 		M = glm::rotate(M, 0.01f, glm::vec3(0.0f, 1.0f, 0.0f));
 		M = glm::rotate(M, 0.01f, glm::vec3(0.0f, 0.0f, 1.0f));
@@ -125,7 +125,7 @@ int main(void)
 		glDrawArrays(GL_TRIANGLES, 0, 3); //mode,first,count
 		// update other events like input handling
 		glfwPollEvents();
-		// put the stuff we’ve been drawing onto the display
+		// put the stuff weï¿½ve been drawing onto the display
 		glfwSwapBuffers(window);
 	}
 

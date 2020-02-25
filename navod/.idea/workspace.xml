@@ -2,19 +2,16 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="navod" targetName="navod" />
+      <config projectName="navod" targetName="files" />
     </generated>
   </component>
-  <component name="CMakeSettings">
+  <component name="CMakeSettings" AUTO_RELOAD="true">
     <configurations>
       <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
     </configurations>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="49f4acc0-7995-492c-ae25-d00f962ace5e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../THelp/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../THelp/files/Camera.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../THelp/files/Camera.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../THelp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../THelp/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../THelp/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../THelp/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../THelp/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../THelp/cmake-build-debug/CMakeCache.txt" afterDir="false" />
@@ -42,9 +39,28 @@
       <change beforePath="$PROJECT_DIR$/../THelp/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../THelp/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../THelp/cmake-build-debug/THelp.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/../THelp/cmake-build-debug/THelp.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../THelp/cmake-build-debug/files" beforeDir="false" afterPath="$PROJECT_DIR$/../THelp/cmake-build-debug/files" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../THelp/files/Camera.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../THelp/files/Camera.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../THelp/files/Camera.h" beforeDir="false" afterPath="$PROJECT_DIR$/../THelp/files/Camera.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../THelp/files/FragmentShader.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../THelp/files/FragmentShader.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../THelp/files/Shader.h" beforeDir="false" afterPath="$PROJECT_DIR$/../THelp/files/Shader.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../THelp/files/Source.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../THelp/files/Source.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../THelp/files/VertexShader.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../THelp/files/VertexShader.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../cv/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../cv/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/../cv/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../cv/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/cmake-build-debug/CMakeFiles/files.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/../cv/cmake-build-debug/CMakeFiles/files.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/cmake-build-debug/CMakeFiles/files.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../cv/cmake-build-debug/CMakeFiles/files.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/cmake-build-debug/CMakeFiles/files.dir/files/camera.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../cv/cmake-build-debug/CMakeFiles/files.dir/files/camera.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/cmake-build-debug/CMakeFiles/files.dir/files/fragmentShader.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../cv/cmake-build-debug/CMakeFiles/files.dir/files/fragmentShader.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/cmake-build-debug/CMakeFiles/files.dir/files/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../cv/cmake-build-debug/CMakeFiles/files.dir/files/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/cmake-build-debug/CMakeFiles/files.dir/files/shader.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../cv/cmake-build-debug/CMakeFiles/files.dir/files/shader.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/cmake-build-debug/CMakeFiles/files.dir/files/vertexShader.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../cv/cmake-build-debug/CMakeFiles/files.dir/files/vertexShader.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/cmake-build-debug/CMakeFiles/files.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../cv/cmake-build-debug/CMakeFiles/files.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../cv/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/cmake-build-debug/cv.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/../cv/cmake-build-debug/cv.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/cmake-build-debug/files" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cv/files/camera.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../cv/files/camera.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../hope/cmake-build-debug/CMakeFiles/3.14.5/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../hope/cmake-build-debug/CMakeFiles/3.14.5/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../hope/cmake-build-debug/CMakeFiles/3.14.5/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../hope/cmake-build-debug/CMakeFiles/3.14.5/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../hope/cmake-build-debug/CMakeFiles/3.14.5/CompilerIdC/a.out" beforeDir="false" afterPath="$PROJECT_DIR$/../hope/cmake-build-debug/CMakeFiles/3.14.5/CompilerIdC/a.out" afterDir="false" />
@@ -55,6 +71,12 @@
       <change beforePath="$PROJECT_DIR$/../hope/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdCXX/a.out" beforeDir="false" afterPath="$PROJECT_DIR$/../hope/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdCXX/a.out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../hope/cmake-build-debug/CMakeFiles/feature_tests.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../hope/cmake-build-debug/CMakeFiles/feature_tests.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../hope/cmake-build-debug/hovno" beforeDir="false" afterPath="$PROJECT_DIR$/../hope/cmake-build-debug/hovno" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/files" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/files" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../untitled/cmake-build-debug/CMakeFiles/3.15.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled/cmake-build-debug/CMakeFiles/3.15.3/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../untitled/cmake-build-debug/CMakeFiles/3.15.3/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled/cmake-build-debug/CMakeFiles/3.15.3/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../untitled/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/a.out" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/a.out" afterDir="false" />
@@ -77,6 +99,12 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -112,7 +140,13 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1571496185135</updated>
-      <workItem from="1571496186719" duration="301000" />
+      <workItem from="1571496186719" duration="3894000" />
+      <workItem from="1571757817222" duration="58000" />
+      <workItem from="1571757967813" duration="608000" />
+      <workItem from="1573583011129" duration="3541000" />
+      <workItem from="1573591132469" duration="85000" />
+      <workItem from="1573600405538" duration="2136000" />
+      <workItem from="1573632906037" duration="1686000" />
     </task>
     <servers />
   </component>
@@ -124,7 +158,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

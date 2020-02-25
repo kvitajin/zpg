@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/files.dir/files/ShaderLoader.cpp.o"
   "CMakeFiles/files.dir/files/camera.cpp.o"
   "CMakeFiles/files.dir/files/fragmentShader.cpp.o"
   "CMakeFiles/files.dir/files/main.cpp.o"

@@ -123,6 +123,33 @@ files/fast:
 	$(MAKE) -f CMakeFiles/files.dir/build.make CMakeFiles/files.dir/build
 .PHONY : files/fast
 
+files/ShaderLoader.o: files/ShaderLoader.cpp.o
+
+.PHONY : files/ShaderLoader.o
+
+# target to build an object file
+files/ShaderLoader.cpp.o:
+	$(MAKE) -f CMakeFiles/files.dir/build.make CMakeFiles/files.dir/files/ShaderLoader.cpp.o
+.PHONY : files/ShaderLoader.cpp.o
+
+files/ShaderLoader.i: files/ShaderLoader.cpp.i
+
+.PHONY : files/ShaderLoader.i
+
+# target to preprocess a source file
+files/ShaderLoader.cpp.i:
+	$(MAKE) -f CMakeFiles/files.dir/build.make CMakeFiles/files.dir/files/ShaderLoader.cpp.i
+.PHONY : files/ShaderLoader.cpp.i
+
+files/ShaderLoader.s: files/ShaderLoader.cpp.s
+
+.PHONY : files/ShaderLoader.s
+
+# target to generate assembly for a file
+files/ShaderLoader.cpp.s:
+	$(MAKE) -f CMakeFiles/files.dir/build.make CMakeFiles/files.dir/files/ShaderLoader.cpp.s
+.PHONY : files/ShaderLoader.cpp.s
+
 files/camera.o: files/camera.cpp.o
 
 .PHONY : files/camera.o
@@ -294,6 +321,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... files"
 	@echo "... edit_cache"
+	@echo "... files/ShaderLoader.o"
+	@echo "... files/ShaderLoader.i"
+	@echo "... files/ShaderLoader.s"
 	@echo "... files/camera.o"
 	@echo "... files/camera.i"
 	@echo "... files/camera.s"

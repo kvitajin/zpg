@@ -39,10 +39,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/kvitajin/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6817.18/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /home/kvitajin/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6817.32/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/kvitajin/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6817.18/bin/cmake/linux/bin/cmake -E remove -f
+RM = /home/kvitajin/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6817.32/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/kvitajin/CLionProjects/vsb/zpg/THelp/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/kvitajin/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6817.18/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/kvitajin/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6817.32/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/kvitajin/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6817.18/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/kvitajin/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6817.32/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -122,6 +122,33 @@ files: cmake_check_build_system
 files/fast:
 	$(MAKE) -f CMakeFiles/files.dir/build.make CMakeFiles/files.dir/build
 .PHONY : files/fast
+
+files/Camera.o: files/Camera.cpp.o
+
+.PHONY : files/Camera.o
+
+# target to build an object file
+files/Camera.cpp.o:
+	$(MAKE) -f CMakeFiles/files.dir/build.make CMakeFiles/files.dir/files/Camera.cpp.o
+.PHONY : files/Camera.cpp.o
+
+files/Camera.i: files/Camera.cpp.i
+
+.PHONY : files/Camera.i
+
+# target to preprocess a source file
+files/Camera.cpp.i:
+	$(MAKE) -f CMakeFiles/files.dir/build.make CMakeFiles/files.dir/files/Camera.cpp.i
+.PHONY : files/Camera.cpp.i
+
+files/Camera.s: files/Camera.cpp.s
+
+.PHONY : files/Camera.s
+
+# target to generate assembly for a file
+files/Camera.cpp.s:
+	$(MAKE) -f CMakeFiles/files.dir/build.make CMakeFiles/files.dir/files/Camera.cpp.s
+.PHONY : files/Camera.cpp.s
 
 files/FragmentShader.o: files/FragmentShader.cpp.o
 
@@ -294,6 +321,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... files"
 	@echo "... edit_cache"
+	@echo "... files/Camera.o"
+	@echo "... files/Camera.i"
+	@echo "... files/Camera.s"
 	@echo "... files/FragmentShader.o"
 	@echo "... files/FragmentShader.i"
 	@echo "... files/FragmentShader.s"

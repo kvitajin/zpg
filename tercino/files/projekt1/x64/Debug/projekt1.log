@@ -1,0 +1,23 @@
+﻿  Camera.cpp
+d:\fei\zpg\projekt\projekt1\camera.h(3): fatal error C1083: Nejde otevřít soubor zahrnout: glm/mat4x4.hpp: No such file or directory
+  ImageLoader.cpp
+d:\fei\zpg\projekt\projekt1\imageloader.h(2): fatal error C1083: Nejde otevřít soubor zahrnout: opencv2/core.hpp: No such file or directory
+  Light.cpp
+d:\fei\zpg\projekt\projekt1\light.h(3): fatal error C1083: Nejde otevřít soubor zahrnout: glm/vec3.hpp: No such file or directory
+  ModelObject.cpp
+d:\fei\zpg\projekt\projekt1\modelobject.h(3): fatal error C1083: Nejde otevřít soubor zahrnout: GL/glew.h: No such file or directory
+  Object.cpp
+d:\fei\zpg\projekt\projekt1\object.h(3): fatal error C1083: Nejde otevřít soubor zahrnout: glm/mat4x4.hpp: No such file or directory
+  OpenGL.cpp
+d:\fei\zpg\projekt\projekt1\opengl.h(3): fatal error C1083: Nejde otevřít soubor zahrnout: GL/glew.h: No such file or directory
+  Renderer.cpp
+d:\fei\zpg\projekt\projekt1\vertexobject.h(3): fatal error C1083: Nejde otevřít soubor zahrnout: GL/glew.h: No such file or directory
+  Shader.cpp
+d:\fei\zpg\projekt\projekt1\shader.h(3): fatal error C1083: Nejde otevřít soubor zahrnout: GL/glew.h: No such file or directory
+  ShaderLoader.cpp
+d:\fei\zpg\projekt\projekt1\shaderloader.h(3): fatal error C1083: Nejde otevřít soubor zahrnout: GL/glew.h: No such file or directory
+  Source.cpp
+d:\fei\zpg\projekt\projekt1\source.cpp(3): fatal error C1083: Nejde otevřít soubor zahrnout: GL/glew.h: No such file or directory
+  VertexObject.cpp
+d:\fei\zpg\projekt\projekt1\vertexobject.h(3): fatal error C1083: Nejde otevřít soubor zahrnout: GL/glew.h: No such file or directory
+  Generování kódu...

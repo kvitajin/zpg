@@ -1,0 +1,17 @@
+newmtl Stump
+Kd 1 1 1
+Ke 0 0 0
+Ka 1 1 1
+Ks 0 0 0
+Ns 0
+Tr 0
+d 1
+Ni 0
+Tf 1 1 1
+map_Kd D:Lightwave/My Models/Tree Stump_01/Model Sales/Stump_obj/Stump_C.png
+map_Ka D:Lightwave/My Models/Tree Stump_01/Model Sales/Stump_obj/Stump_D.png
+map_Ks D:Lightwave/My Models/Tree Stump_01/Model Sales/Stump_obj/Stump_D.png
+map_Ns D:Lightwave/My Models/Tree Stump_01/Model Sales/Stump_obj/Stump_D.png
+map_bump D:Lightwave/My Models/Tree Stump_01/Model Sales/Stump_obj/Stump_B.png
+bump D:Lightwave/My Models/Tree Stump_01/Model Sales/Stump_obj/Stump_B.png
+

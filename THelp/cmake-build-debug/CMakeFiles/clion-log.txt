@@ -1,4 +1,13 @@
-/home/kvitajin/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6817.18/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/kvitajin/CLionProjects/vsb/zpg/THelp
--- Configuring done
--- Generating done
--- Build files have been written to: /home/kvitajin/CLionProjects/vsb/zpg/THelp/cmake-build-debug
+/home/kvitajin/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.6817.32/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/kvitajin/CLionProjects/vsb/zpg/THelp
+CMake Error at CMakeLists.txt:6 (find_package):
+  Could not find a configuration file for package "glm" that is compatible
+  with requested version "".
+
+  The following configuration files were considered but not accepted:
+
+    /usr/share/cmake/glm/glmConfig.cmake, version: 0.9.9 (32bit)
+
+
+
+-- Configuring incomplete, errors occurred!
+See also "/home/kvitajin/CLionProjects/vsb/zpg/THelp/cmake-build-debug/CMakeFiles/CMakeOutput.log".

@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/kvitajin/CLionProjects/vsb/zpg/THelp/files/Camera.cpp" "/home/kvitajin/CLionProjects/vsb/zpg/THelp/cmake-build-debug/CMakeFiles/files.dir/files/Camera.cpp.o"
   "/home/kvitajin/CLionProjects/vsb/zpg/THelp/files/FragmentShader.cpp" "/home/kvitajin/CLionProjects/vsb/zpg/THelp/cmake-build-debug/CMakeFiles/files.dir/files/FragmentShader.cpp.o"
   "/home/kvitajin/CLionProjects/vsb/zpg/THelp/files/OpenGL.cpp" "/home/kvitajin/CLionProjects/vsb/zpg/THelp/cmake-build-debug/CMakeFiles/files.dir/files/OpenGL.cpp.o"
   "/home/kvitajin/CLionProjects/vsb/zpg/THelp/files/Shader.cpp" "/home/kvitajin/CLionProjects/vsb/zpg/THelp/cmake-build-debug/CMakeFiles/files.dir/files/Shader.cpp.o"

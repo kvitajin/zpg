@@ -14,7 +14,7 @@ set(ALL_LIBS
         )
 
 set(CMAKE_CXX_STANDARD 14)
-add_executable(files files/main.cpp files/vertexShader.cpp files/vertexShader.h files/fragmentShader.cpp files/fragmentShader.h files/shader.cpp files/shader.h files/vertexObject.cpp files/vertexObject.h files/camera.cpp files/camera.h)
+add_executable(files files/main.cpp files/vertexShader.cpp files/vertexShader.h files/fragmentShader.cpp files/fragmentShader.h files/shader.cpp files/shader.h files/vertexObject.cpp files/vertexObject.h files/camera.cpp files/camera.h files/ShaderLoader.cpp )
 target_link_libraries( files ${ALL_LIBS})
 
 

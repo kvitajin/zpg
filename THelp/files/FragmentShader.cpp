@@ -22,4 +22,4 @@ FragmentShader::~FragmentShader()
 GLuint FragmentShader::GetShader()
 {
 	return this->shader;
-}
+};

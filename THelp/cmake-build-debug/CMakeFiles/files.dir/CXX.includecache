@@ -6,3 +6,19 @@
 
 #IncludeRegexTransform: 
 
+/home/kvitajin/CLionProjects/vsb/zpg/THelp/files/FragmentShader.cpp
+FragmentShader.h
+/home/kvitajin/CLionProjects/vsb/zpg/THelp/files/FragmentShader.h
+
+/home/kvitajin/CLionProjects/vsb/zpg/THelp/files/FragmentShader.h
+Shader.h
+/home/kvitajin/CLionProjects/vsb/zpg/THelp/files/Shader.h
+stdio.h
+-
+
+/home/kvitajin/CLionProjects/vsb/zpg/THelp/files/Shader.h
+GL/glew.h
+-
+GLFW/glfw3.h
+-
+

@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/files.dir/files/Camera.cpp.o"
   "CMakeFiles/files.dir/files/FragmentShader.cpp.o"
   "CMakeFiles/files.dir/files/OpenGL.cpp.o"
   "CMakeFiles/files.dir/files/Shader.cpp.o"

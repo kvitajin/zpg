@@ -279,6 +279,8 @@ int main()
 
 
     tmp.difY=tmp.difX=1;
+    glm::mat4 projMat =glm::mat4(1.0f);
+    projMat =glm::perspective(glm::radians(45.0f), 4.0f / 3.0f, 0.1f, 100.0f);
 
     while (!glfwWindowShouldClose(window))
     {
@@ -288,8 +290,7 @@ int main()
 //        viewMat=glm::lookAt(eye,glm::vec3(0,0,0),glm::vec3(0,1,0));
         viewMat=glm::lookAt(eye, eye + target, up);
 
-        glm::mat4 projMat =glm::mat4(1.0f);
-        projMat =glm::perspective(glm::radians(45.0f), 4.0f / 3.0f, 0.1f, 100.0f);
+
 
         glfwSetCursorPosCallback(window, pokus);
 
@@ -322,6 +323,16 @@ int main()
             std::cout << "o kurwa projekcni" << std::endl;
             return 2;
         }
+
+        vec4 ex_worldPosition;
+        vec3 ex_worldNormal;
+        vec4 out_Color;
+        gl_Position = (ProjectionMatrix * ViewMatrix * ModelMatrix) * vec4(in_Position,1.0f);
+        ex_worldPosition= ModelMatrix* vec4(in_Position,1.0f);
+        ex_worldNormal= NormalMatrix* in_Normal; //příště
+
+
+
 
         glUseProgram(shaderProgram);
         glUniformMatrix4fv(modelMatrixID, 1, GL_FALSE, glm::value_ptr(M));
